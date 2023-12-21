@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { PATH } from "./../../config/path";
 
 const Header = () => {
   return (
@@ -16,20 +15,23 @@ const Header = () => {
           <div>
             <NavLink
               to="/"
-              className="font-medium text-[1.25rem] text-white pr-[3.125rem] hover:text-[2.5rem] hover:text-orange-500 focus:text-orange-500"
+              className="font-medium text-[1.25rem] text-white pr-[3.125rem]  hover:text-orange-500 focus:text-orange-500"
             >
               Home
             </NavLink>
-            <NavLink className="font-medium text-[1.25rem] text-white pr-[3.125rem] hover:text-[2.5rem] hover:text-orange-500 focus:text-orange-500">
+            <NavLink
+              to="/about"
+              className="font-medium text-[1.25rem] text-white pr-[3.125rem]  hover:text-orange-500 focus:text-orange-500"
+            >
               About
             </NavLink>
             <NavLink
-              to={PATH.menu}
-              className="font-medium text-[1.25rem] text-white pr-[3.125rem] hover:text-[2.5rem] hover:text-orange-500 focus:text-orange-500"
+              to="/menu"
+              className="font-medium text-[1.25rem] text-white pr-[3.125rem]  hover:text-orange-500 focus:text-orange-500"
             >
               Menu
             </NavLink>
-            <NavLink className="font-medium text-[20px] text-white hover:text-[40px] hover:text-orange-500 focus:text-orange-500">
+            <NavLink className="font-medium text-[20px] text-white  hover:text-orange-500 focus:text-orange-500">
               Contact
             </NavLink>
           </div>
@@ -53,6 +55,7 @@ const Header = () => {
         </p>
         <p className="font-bold 2xl:text-[1.875rem] md:text-[20px] text-[#f7f4f2]">
           CLOSED TUES/WEDS
+          
         </p>
       </div>
     </div>

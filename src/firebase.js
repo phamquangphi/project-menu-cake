@@ -16,7 +16,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Sử dụng Realtime Database
+// Sử dụng Realtime Databasem
+
 const database = getDatabase(app);
 const dbRef = ref(database);
 set(child(dbRef, `menu/1`), {
