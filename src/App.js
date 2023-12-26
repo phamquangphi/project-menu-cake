@@ -1,11 +1,7 @@
 import RouteApp from "./routers/RouteApp";
 
 function App() {
-  return (
-    <div>
-      <RouteApp />
-    </div>
-  );
+  return <RouteApp />;
 }
 
 export default App;

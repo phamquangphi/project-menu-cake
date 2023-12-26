@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { child, getDatabase, ref, set } from "firebase/database";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDItgHq24H-lQFpso5e5ije0o0ACZL2dug",
@@ -17,8 +19,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Sử dụng Realtime Databasem
-
 const database = getDatabase(app);
+// Initialize Cloud Storage and get a reference to the service
+const storage = getStorage(app);
+
+// sử dụng fireStore
+const dbStore = getFirestore(app);
 const dbRef = ref(database);
 set(child(dbRef, `menu/1`), {
   id: 678,
@@ -63,4 +69,4 @@ set(child(dbRef, `menu/7`), {
   price: "5.00$",
 });
 
-export { app, database };
+export { app, database, dbStore, storage };

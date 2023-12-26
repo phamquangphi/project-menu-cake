@@ -38,6 +38,9 @@ const Header = () => {
           <div>
             <i className="fa-brands fa-instagram text-white text-[30px] pr-[30px] hover:text-orange-500"></i>
             <i className="fa-brands fa-facebook text-white text-[30px] hover:text-orange-500"></i>
+            <NavLink to="/addmin">
+              <i className="fa-solid fa-file-circle-plus pl-[30px] text-white text-[30px] hover:text-orange-500"></i>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -55,7 +58,6 @@ const Header = () => {
         </p>
         <p className="font-bold 2xl:text-[1.875rem] md:text-[20px] text-[#f7f4f2]">
           CLOSED TUES/WEDS
-          
         </p>
       </div>
     </div>
