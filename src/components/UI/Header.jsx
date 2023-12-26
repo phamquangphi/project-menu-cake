@@ -11,7 +11,7 @@ const Header = () => {
       />
       <div className=" absolute top-0 left-0 mt-[2.5rem] mx-20">
         <div className=" flex items-center justify-between">
-          <img className="w-[10%]" src="/images/logo.png" alt="" />
+          <img className="w-[10%]" src="/images/Logo.png" alt="" />
           <div>
             <NavLink
               to="/"
